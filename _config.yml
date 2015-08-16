@@ -43,5 +43,5 @@ soundcloud: "https://soundcloud.com/vinay-dandekar"
 
 # Options
 custom_header: true
-custom_nav_footer: false
+custom_nav_footer: true
 reverse: false

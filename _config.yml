@@ -1,0 +1,47 @@
+# Site settings
+title: 'roadmapper'
+description: "I'm a software engineer stumbling through Android."
+url: "http://roadmapper.github.io"
+author:
+  name: "Vinay Dandekar"
+
+# Build settings
+baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+#markdown: kramdown
+
+#kramdown:
+#  input: GFM
+
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+
+
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Custom variables
+version: "1.1.0"
+
+github: "https://github.com/roadmapper"
+twitter: "https://twitter.com/vvdandekar"
+soundcloud: "https://soundcloud.com/vinay-dandekar"
+
+# Options
+custom_header: true
+custom_nav_footer: false
+reverse: false

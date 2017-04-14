@@ -1,22 +1,21 @@
 # Site settings
 title: 'roadmapper'
-description: "I'm a software engineer stumbling through Android."
+description: "I'm a software engineer exploring the vastness of the cloud."
 url: "http://roadmapper.github.io"
 author:
   name: "Vinay Dandekar"
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
-#markdown: kramdown
+markdown: kramdown
 
 #kramdown:
 #  input: GFM
 
-markdown: redcarpet
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+# redcarpet:
+#   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
 
 
 source: .

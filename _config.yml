@@ -1,5 +1,5 @@
 # Site settings
-title: 'roadmapper'
+title: "Vinay Dandekar's Blog"
 description: "I'm a software engineer exploring the vastness of the cloud."
 url: "http://roadmapper.github.io"
 author:
@@ -26,12 +26,15 @@ paginate_path: /page:num/
 
 # Default values
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 # Custom variables
 version: "1.1.0"

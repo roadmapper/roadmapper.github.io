@@ -13,6 +13,12 @@ A non-exhaustive list:
 - Summoning music from Siri (iOS or Homepod) for Apple Music or through Siri Shortcuts and [IFTTT](https://ifttt.com/sonos)
 - Summoning music from Google Assistant on a voice enabled Sonos device (Sonos One or Sonos Beam) or a Google Assistant capable device
 
+https://www.raspberrypi.org/forums/viewtopic.php?t=165013
+https://kbase.io/boadcast-sound-over-network-from-raspberrypi-with-rasbian-stretch-darkice-and-icecast2/
+https://www.instructables.com/id/Play-Bluetooth-on-Sonos-Using-Raspberry-Pi/
+https://github.com/x20mar/darkice-with-mp3-for-raspberry-pi
+https://maker.pro/raspberry-pi/projects/how-to-build-an-internet-radio-station-with-raspberry-pi-darkice-and-icecast
+https://github.com/raspberrypi/linux/issues/1402#issuecomment-481501676
 
 
 Shoutcast
@@ -27,4 +33,6 @@ INFO:__main__:DeviceStatus(friendly_name='Sonos', model_name='Chromecast Audio',
 INFO:__main__:CastStatus(is_active_input=None, is_stand_by=None, volume_level=0.7399999499320984, volume_muted=False, app_id='9A5289F5', display_name='SoundCloud', namespaces=['urn:x-cast:com.google.cast.debugoverlay', 'urn:x-cast:com.google.cast.cac', 'urn:x-cast:com.soundcloud.chromecast', 'urn:x-cast:com.google.cast.broadcast', 'urn:x-cast:com.google.cast.media'], session_id='7b0b38cc-9bea-44e0-a96a-33b4aff84007', transport_id='7b0b38cc-9bea-44e0-a96a-33b4aff84007', status_text='Ready to play')
 INFO:__main__:Media status changed to: PLAYING, The Mat Zo Mix 005 [05-10-13] - Mat Zo
 INFO:__main__:Update to Icecast server: 200
+
+http://docs.python-soco.com/en/latest/api/soco.events.html
 ```

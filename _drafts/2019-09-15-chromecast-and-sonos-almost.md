@@ -27,10 +27,14 @@ There are some interesting options that exist to integrate a Chromecast Audio wi
 
 Unfortunately, unless you _already_ have one of these Sonos components, these options are a little bit cost prohibitive (plus I don't think my neighbors would appreciate me adding a 7th speaker to my apartment 😅).
 
-In searching for a way to make better use of my Raspberry Pi 3, I stumbled upon quite a few tutorials on how to integrate a Raspberry Pi and a sound card into a Sonos system; the best one I've seen is uses a external sound card from Behringer:
-https://www.instructables.com/id/Add-Aux-to-Sonos-Using-Raspberry-Pi/
+
+## Research
+In searching for a way to make better use of my Raspberry Pi 3, I stumbled upon quite a few tutorials on how to integrate a Raspberry Pi and a sound card into a Sonos system; the best one I've seen is uses a USB external sound card: https://www.instructables.com/id/Add-Aux-to-Sonos-Using-Raspberry-Pi/
 
 The set up described above can work with a Chromecast Audio pretty easily by adding a RCA to 3.5mm Y-cable to connect to the sound card to capture the input. However, I wasn't satisfied with just _analog_ audio since the Chromecast Audio actually has the capability to output digital PCM audio (up to 24 bit/96 KHz). Since I like to take on major yak-shaving projects, I thought this would be a great way build my own solution using the digital audio output and also learn more about the Chromecast and Sonos APIs to provide improved metadata to Sonos when playing audio.
+
+Sonos supports playing a MP3 file over the network and reading metadata in a an Icecast 2 or Shoutcast format
+
 
 ## The Hardware
 Parts needed for this project:
@@ -42,6 +46,9 @@ Parts needed for this project:
 - mini-TOSLINK to TOSLINK cable
 
 Luckily, there are still vendors on Google Shopping that will sell you new, old stock Chromecast Audio for an eye-watering $40 (remembering that these devices were available for as low as $15 right before Google discontinued them). If you want to try this with the native Bluetooth radio on the Raspberry Pi 3B or up, it is possible to do so with some caveats (refer to notes at the end).
+
+
+
 
 
 ## Setting Up Streaming
@@ -128,7 +135,7 @@ Add a fallback mountpoint to the Icecast 2 config (`/etc/icecast2/icecast.xml`)
 
 https://github.com/coreyk/darkice-libaacplus-rpi-guide
 https://github.com/x20mar/darkice-with-mp3-for-raspberry-pi
-```
+
 
 https://www.raspberrypi.org/forums/viewtopic.php?t=165013
 https://kbase.io/boadcast-sound-over-network-from-raspberrypi-with-rasbian-stretch-darkice-and-icecast2/

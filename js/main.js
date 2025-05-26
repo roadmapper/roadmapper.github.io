@@ -40,10 +40,6 @@ function menuClick() {
 
 menuClick();
 
-function toggleZoom(img) {
-	img.classList.toggle("zoomed");
-}
-
 window.addEventListener("load", () => {
 	const images = document.querySelectorAll(".responsive-img");
 
@@ -66,3 +62,14 @@ window.addEventListener("load", () => {
 		}
 	}
 });
+
+function toggleZoom(img) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  }
+
+function closeModal() {
+	document.getElementById("imageModal").style.display = "none";
+}

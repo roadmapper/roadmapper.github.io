@@ -5,7 +5,7 @@ title: Who is Vinay?
 ## About
 Since a young age I've been a curious person interested in _anything_ that is interactive. I'm always keen to design and implement solutions for interesting problems.
 
-I'm currently a software engineer working on trust products at Brex, an corporate and card expense management product; these days I dabble in whereever the business needs me in securing our internal/external APIs and connecting the dots across engineering and product domains.
+I'm currently a software engineer working on trust products at Brex, an corporate and card expense management product; these days I dabble in wherever the business needs me in securing our internal/external APIs and connecting the dots across engineering and product domains.
 We mostly use Kotlin today, but I dabble in some Golang (and reluctantly Elixir) from time to time.
 
 In my career, I've worked on:

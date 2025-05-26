@@ -35,6 +35,10 @@ defaults:
       path: "assets/img"
     values:
       image: true
+  - scope:
+      path: "assets/img/**/*.jpg"
+    values:
+      image: true
 
 # Custom variables
 version: "1.1.0"

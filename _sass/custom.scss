@@ -14,3 +14,13 @@ pre {
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
+.image {
+  width: 200px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image.zoomed {
+  transform: scale(2); /* 2x zoom */
+}

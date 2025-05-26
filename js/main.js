@@ -43,3 +43,26 @@ menuClick();
 function toggleZoom(img) {
 	img.classList.toggle("zoomed");
 }
+
+window.addEventListener("load", () => {
+	const images = document.querySelectorAll(".responsive-img");
+
+	images.forEach(img => {
+		// Wait until image is fully loaded
+		if (img.complete) {
+			setImageSize(img);
+		} else {
+			img.onload = () => setImageSize(img);
+		}
+	});
+
+	function setImageSize(img) {
+		if (img.naturalHeight > img.naturalWidth) {
+			// Portrait
+			img.style.width = "400px";
+		} else {
+			// Landscape
+			img.style.width = "800px";
+		}
+	}
+});

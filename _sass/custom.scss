@@ -15,12 +15,13 @@ pre {
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-.image {
-  width: 400px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+.responsive-img {
+    display: block;
+    margin-left: 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .image.zoomed {
-  transform: scale(2); /* 2x zoom */
+    transform: scale(2); /* 2x zoom */
 }

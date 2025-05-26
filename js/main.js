@@ -68,8 +68,20 @@ function toggleZoom(img) {
     var modalImg = document.getElementById("modalImage");
     modal.style.display = "block";
     modalImg.src = img.src;
-  }
+
+	// Add Escape key listener
+    document.addEventListener("keydown", handleEscape);
+}
 
 function closeModal() {
 	document.getElementById("imageModal").style.display = "none";
+
+	// Remove Escape key listener when modal is closed
+    document.removeEventListener("keydown", handleEscape);
+}
+
+function handleEscape(e) {
+	if (e.key === "Escape" || e.key === "Esc") {
+		closeModal();
+	}
 }

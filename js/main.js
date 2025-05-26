@@ -59,7 +59,7 @@ window.addEventListener("load", () => {
 	function setImageSize(img) {
 		if (img.naturalHeight > img.naturalWidth) {
 			// Portrait
-			img.style.width = "400px";
+			img.style.width = "600px";
 		} else {
 			// Landscape
 			img.style.width = "800px";
